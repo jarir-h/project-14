@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+.manu-bar{
+    text-align: center;
+}
+.manu-bar ul{
+    
+}
+.manu-bar ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 20px;
+    
+}
+.manu-bar ul li a{
+    text-decoration: none;
+    display: inline-block;
+    background: #37c9ea;
+    color: rgb(6, 1, 32);
+    padding: 10px;
+    font-weight: bold;
+    transition: .6s;
+}
+.manu-bar ul li:hover a{
+    background: rgb(244, 244, 244);
+    color: #37c9ea;
+}
+.manu-bar ul li a{
+    border-bottom: 5px solid #ffff;
+    position: relative;
+}
+.manu-bar ul li a::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 0;
+    bottom: 8px;
+    left: 0;
+    background-color: #230b0b;
+    /* border-bottom: 5px solid #230b0b; */
+    transition: .6s;
+}
+.manu-bar ul li a:hover::after{
+    width: 100%;
+}
+
+/*         Bannar Section       */
+
+.bannar{
+    background: #37c9ea;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.bannar h4{
+    color: #ffff;
+    padding-bottom: 20px;
+}
+.bannar h1{
+    color: #ffff;
+    padding-bottom: 10px;
+}
+.bannar .a-tag{
+    text-align: center;
+    display: inline-block;
+    background-color: #ffff;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+.bannar a{
+    text-decoration: none;
+    height: 50px;
+    width: 100px;
+    line-height: 50px;
+    display: inline-block;
+    color: rgb(109, 106, 106);
+    
+}
+.bannar a::before{
+    content: "\f17b";
+    font: var(--fa-font-solid);
+    font-weight: 600;
+    color: rgb(82, 78, 78);
+}
+.bannar a::before{
+    content: "";
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: .7s;
+}
+.bannar a:hover::before{
+    width: 100%;
+
+}
+.bannar a:hover{
+    color: #ffff;
+}
+
+/*      Service Section   */
+
+.service{
+    margin-top: 60px;
+    text-align: center;
+}
+.service h2{
+    font-weight: bold;
+}
+.service p{
+    margin-bottom: 40px;
+}
+.service .img-mr {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.service img{
+    height: 100%;
+    width: 100%; 
+    
+}
+.service .bor{
+    border: 2px solid transparent;
+    
+}
+.service .img-1{
+    transition: .5s;
+     
+}
+.service .img-1:hover{
+    transform: rotate(180deg);
+}
+.service .img-2{
+    transition: .5s;
+}
+.service .img-2:hover{
+    transform: rotate(45deg);
+}
+.service .img-3{
+    transition: .5s;
+}
+.service .img-3:hover{
+    transform: translate(-10px,50px);
+}
+.service .img-4{
+    transition: .5s;
+}
+.service .img-4:hover{
+    transform: translate(50px,-10px);
+}
+.service .img-5{
+    transition: .5s;
+}
+.service .img-5:hover{
+    transform: skew(20deg);
+}
+.service .img-6{
+    transition: .5s;
+}
+.service .img-6:hover{
+    transform: rotate(180deg) scale(1.4);
+}
+.service .img-7{
+    transition: .5s
+}
+.service .img-7:hover{
+    transform: scale(1.4);
+}
+.service .img-8{
+    transition: .5s
+}
+.service .img-8:hover{
+    transform: scaley(1.4);
+}
+.h2-tag{
+    padding-top: 100px;
+}
+.h2-tag h2{
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+.p-tag p{
+    text-align: justify;
+}
+
+.butt-tag button{
+    background-color: #020101;
+    padding: 10px;
+    color: #fff;
+}
+.butt-tag .button-1 {
+    transform: rotate(308deg);
+    margin-bottom: 15px;
+    transition: .9s;
+}
+.butt-tag .button-1:hover{
+    transform: rotate(0deg);
+    background-color: #18a5c5;
+    border: none;
+}
+.butt-tag .button-2 {
+    transform: translateY(-5px);
+    transition: .9s;
+}
+.butt-tag .button-2:hover{
+    transform: translatey(0px);
+    background-color: #18a5c5;
+    border: none;
+}
+
+.butt-tag .button-3 {
+    transform: rotate(50deg);
+    transition: .9s;
+}
+.butt-tag .button-3:hover{
+    transform: rotate(0deg);
+    background-color: #18a5c5;
+    border: none;
+}
+
+  /*   Footer Section  */
+
+  .footer{
+    background-color: rgb(37, 34, 34);
+    text-align: center;
+    padding: 20px;
+  }
+  .footer p{ 
+    color: #fff;
+  }
